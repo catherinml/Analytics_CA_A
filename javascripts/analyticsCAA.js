@@ -10,7 +10,7 @@ gadgets.util.registerOnLoadHandler(function() {
 				$("#caGroupName").html(content);
 				gadgets.window.adjustHeight();
     		}
-     			osapi.jive.corev3.places.requestPicker({success:callback, 	type: "@all"});
+     			osapi.jive.core.places.requestPicker({success:callback, placeType: "group"});
 	});
 });
 
